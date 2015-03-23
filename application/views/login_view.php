@@ -31,6 +31,12 @@
     </div>
 </form>
 
+<form action="register">
+    <div class="form-group">
+        <button type="submit" value="Register" class="btn btn-primary btn-lg pull-right">Register</button>
+    </div>
+</form>
+
 </div>
 
 </body>

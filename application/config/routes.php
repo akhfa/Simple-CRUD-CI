@@ -38,10 +38,15 @@
 |
 */
 
-//root url: http://localhost/namafolder/
+//root url: http://localhost/
 
 //$route['class/function'] = "link";
 //menghasilkan http://localhost/index.php/link
+//link ini akan memanggil controller dengan nama kelas "class" dan nama fungsi "register"
+
+//$route['user/register'] = "register";
+//menghasilkan http://localhost/index.php/register
+//link ini akan memanggil controller dengan nama kelas "user" dan nama fungsi "register"
 
 $route['default_controller'] = "login";
 $route['user/register'] = "register";
