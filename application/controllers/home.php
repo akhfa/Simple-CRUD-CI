@@ -1,5 +1,4 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-session_start();
 class Home extends CI_Controller {
 
    function __construct()
@@ -25,7 +24,7 @@ class Home extends CI_Controller {
    function logout()
    {
      $this->session->unset_userdata('logged_in');
-     session_destroy();
+     $this->session->sess_destroy();
      redirect('home', 'refresh');
    }
 
