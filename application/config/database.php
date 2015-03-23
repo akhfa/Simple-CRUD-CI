@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'loginci';
+$db['default']['username'] = 'trial_crudci';
 $db['default']['password'] = 'akhfa';
-$db['default']['database'] = 'loginci';
+$db['default']['database'] = 'trial_crudci';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

@@ -19,5 +19,26 @@
 				return false;
 			}
 		}
+		function register($username, $password)
+		{
+			$this->db->select('id, username, password');
+			$this->db->from('users');
+			$this->db->where('username', $username);
+			$this->db->limit(1);
+
+			$query = $this->db->get();
+
+			if($query->num_rows() == 1)
+			{
+				return false;
+			}
+			else 
+			{
+				$data = array('username' => $username,
+						  		'password' => MD5($password));
+				$this->db->insert('users', $data);
+				return true;
+			}
+		}
 	}
 ?>
