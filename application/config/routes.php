@@ -38,6 +38,11 @@
 |
 */
 
+//root url: http://localhost/namafolder/
+
+//$route['class/function'] = "link";
+//menghasilkan http://localhost/index.php/link
+
 $route['default_controller'] = "login";
 $route['user/register'] = "register";
 $route['404_override'] = '';
