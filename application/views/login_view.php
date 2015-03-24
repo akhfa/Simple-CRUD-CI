@@ -31,7 +31,7 @@
     </div>
 </form>
 
-<form action="register">
+<form action="<?php echo base_url()?>/index.php/register">
     <div class="form-group">
         <button type="submit" value="Register" class="btn btn-primary btn-lg pull-right">Register</button>
     </div>
