@@ -40,5 +40,17 @@
 				return true;
 			}
 		}
+		function changepassword($username, $password)
+		{
+			$data = array(
+               'password' => MD5($password)
+            );
+
+			$this->db->where('username', $username);
+			if($this->db->update('users', $data))
+				return true;
+			else
+				return false;
+		}
 	}
 ?>

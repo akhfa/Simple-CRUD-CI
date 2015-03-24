@@ -16,7 +16,7 @@
 <div class="container">
 
 <div class="page-header">
-    <h1>Failed Register</h1>
+    <h1>Register</h1>
 </div>
     <?php echo '<h1> Register Failed<h1>' ?>
     <div>

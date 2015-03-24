@@ -19,7 +19,7 @@
     <!-- Listing directory -->
     <?php $map = directory_map('./uploads/'.$id.'-'.$username);?>
       <?php $dir = base_url().'uploads/'.$id.'-'.$username; ?>
-
+      
       <div class="container">
         <div class="row row-centered">
               <?php foreach ($map as $value):?>
@@ -31,6 +31,13 @@
       </div>
     
 
+   <form action="changepassword_controller">
+      <div class="form-group">
+          <button type="submit" value="ChangePassword" class="btn btn-primary btn-lg pull-left">Change Password</button>
+      </div>
+  </form>
+  <br>
+  <br>
    <form action="upload_controller">
     	<div class="form-group">
         	<button type="submit" value="Upload" class="btn btn-primary btn-lg pull-left">Upload</button>

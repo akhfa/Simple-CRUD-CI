@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Success Register</title>
+    <title>Ubah Password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/bootstrap/css/bootstrap.min.css" />
@@ -16,13 +16,20 @@
 <div class="container">
 
 <div class="page-header">
-    <h1>Register</h1>
+    <h1>Ubah Password</h1>
 </div>
-    <?php echo '<h1> Register Success<h1>' ?>
-    <div>
-        <form action="<?php echo base_url()?>">
-            <button type="submit" value="Login" class="btn btn-primary btn-lg btn-block">Login</button>
-        </form>
+
+    <?php echo validation_errors(); ?>
+    <?php echo form_open('do_changepass'); ?>
+
+    <div class="form-group">
+        <input type="password" class="form-control input-lg" placeholder="Password" id="password" name="password"/>
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control input-lg" placeholder="Konfirmasi Password" id="passwordConf" name="passwordConf"/>
+    </div>
+    <div class="form-group">
+        <button type="submit" value="Change" class="btn btn-primary btn-lg btn-block">Change My Password</button>
     </div>
 </form>
 
