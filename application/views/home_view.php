@@ -23,15 +23,15 @@
     <?php $map = directory_map('./uploads/'.$id.'-'.$username);?>
       <?php $dir = base_url().'uploads/'.$id.'-'.$username; ?>
       
-      <div class="container">
+      <!-- <div class="container">
         <div class="row row-centered">
-              <?php foreach ($map as $value):?>
+              <?php //foreach ($map as $value):?>
                 <div class="col-xs-2 col-centered">
-                  <img src="<?php echo $dir.'/'.$value?>" class="img-thumbnail" width="200" height="200">
+                  <img src="<?php //echo $dir.'/'.$value?>" class="img-thumbnail" width="200" height="200">
                 </div>
-              <?php endforeach; ?>
+              <?php //endforeach; ?>
         </div>
-      </div>
+      </div> -->
 
       <div class="table-responsive">          
       <table class="table">
@@ -61,21 +61,17 @@
 
     <form action="changepassword_controller">
       <div class="form-group">
-          <button type="submit" value="ChangePassword" class="btn btn-primary btn-lg pull-left">Change Password</button>
+          <button type="submit" value="ChangePassword" class="btn btn-primary btn-lg btn-block">Change Password</button>
       </div>
     </form>
-    <br>
-    <br>
     <form action="upload_controller">
-    	<div class="form-group">
-        	<button type="submit" value="Upload" class="btn btn-primary btn-lg pull-left">Upload</button>
+    	<div class="form-group row text-center">
+        	<button type="submit" value="Upload" class="btn btn-primary btn-lg btn-block">Upload</button>
     	</div>
 	 </form>
-	 <br>
-	 <br>
-   	  <form action="home/logout">
-    	   <div class="form-group">
-      	   <button type="submit" value="Logout" class="btn btn-primary btn-lg pull-left">Logout</button>
+		  <form action="home/logout">
+    	   <div class="form-group row text-center">
+      	   <button type="submit" value="Logout" class="btn btn-primary btn-lg btn-block">Logout</button>
     	   </div>
 	    </form>
  </body>
