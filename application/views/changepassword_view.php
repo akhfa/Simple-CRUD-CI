@@ -32,6 +32,9 @@
         <button type="submit" value="Change" class="btn btn-primary btn-lg btn-block">Change My Password</button>
     </div>
 </form>
+    <form action="home">
+        <button type="submit" value="Home" class="btn btn-primary btn-lg btn-block">Cancel</button>
+    </form>
 
 </div>
 
