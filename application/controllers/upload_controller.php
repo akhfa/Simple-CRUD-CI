@@ -27,10 +27,10 @@
 				mkdir('./uploads/'.$id.'-'.$username, 0777, TRUE);
 
 			$config['upload_path'] = './uploads/'.$id.'-'.$username;
-			$config['allowed_types'] = 'gif|jpg|png';
+			$config['allowed_types'] = '*';
 			$config['max_size']	= '1500';
-			$config['max_width']  = '10240';
-			$config['max_height']  = '7680';
+			$config['max_width']  = '*';
+			$config['max_height']  = '*';
 
 			$this->load->library('upload', $config);
 
