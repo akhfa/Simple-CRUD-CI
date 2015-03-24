@@ -20,8 +20,12 @@
 </div>
     <?php echo '<h1> Register Failed<h1>' ?>
     <div>
-        <form action="<?php echo base_url()?>index.php/register">
+        <form action="register">
             <button type="submit" value="Register" class="btn btn-primary btn-lg btn-block">Register</button>
+        </form>
+        <br>
+        <form action="home">
+            <button type="submit" value="Home" class="btn btn-primary btn-lg btn-block">Cancel</button>
         </form>
     </div>
 </form>
