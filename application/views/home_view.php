@@ -32,6 +32,29 @@
               <?php endforeach; ?>
         </div>
       </div>
+
+      <div class="table-responsive">          
+      <table class="table">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>File Name</th>
+            <th>Delete</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+            <?php $no = 1; ?>
+            <?php foreach ($map as $value):?>
+              <tr>
+                <td><?php echo $no; ?></td>
+                <td><a href="<?php echo $dir.'/'.$value?>"><?php echo $value;?></td>
+              </tr>
+              <?php $no++; ?>
+            <?php endforeach; ?>
+        </tbody>
+      </table>
+      </div>
     
 
     <form action="changepassword_controller">
