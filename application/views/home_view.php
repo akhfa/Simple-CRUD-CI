@@ -22,16 +22,6 @@
     <!-- Listing directory -->
     <?php $map = directory_map('./uploads/'.$id.'-'.$username);?>
       <?php $dir = base_url().'uploads/'.$id.'-'.$username; ?>
-      
-      <!-- <div class="container">
-        <div class="row row-centered">
-              <?php //foreach ($map as $value):?>
-                <div class="col-xs-2 col-centered">
-                  <img src="<?php //echo $dir.'/'.$value?>" class="img-thumbnail" width="200" height="200">
-                </div>
-              <?php //endforeach; ?>
-        </div>
-      </div> -->
 
       <div class="table-responsive">          
       <table class="table">
@@ -49,7 +39,7 @@
               <tr>
                 <td><?php echo $no; ?></td>
                 <td><a href="<?php echo $dir.'/'.$value?>"><?php echo $value;?></td>
-                <td class="row text-center"><span class="glyphicon glyphicon-remove"></span></td>
+                <td class="row text-center"> <a href="file_controller/delFile/<?php echo $value?>"><span class="glyphicon glyphicon-remove"></span></td>
                 <td class="row text-center"> <a href="<?php echo $dir.'/'.$value?>"><span class="glyphicon glyphicon-download-alt"></span></td>
               </tr>
               <?php $no++; ?>
