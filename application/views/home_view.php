@@ -12,9 +12,12 @@
     <script type="text/javascript" src="<?php echo base_url()?>/bootstrap/js/bootstrap.min.js"></script>
  </head>
  <body>
-   <h1>Home</h1>
-   <h2>Welcome <?php echo $username; ?>!</h2>
-   <h3>Your member id is <?php echo $id; ?> </h3>
+    <div class="page-header text-center">
+      <h1>Home</h1>
+      <h2>Welcome <?php echo $username; ?>!</h2>
+      <h3>Your member id is <?php echo $id; ?> </h3>
+    </div>
+     
     
     <!-- Listing directory -->
     <?php $map = directory_map('./uploads/'.$id.'-'.$username);?>
@@ -31,26 +34,24 @@
       </div>
     
 
-   <form action="changepassword_controller">
+    <form action="changepassword_controller">
       <div class="form-group">
           <button type="submit" value="ChangePassword" class="btn btn-primary btn-lg pull-left">Change Password</button>
       </div>
-  </form>
-  <br>
-  <br>
-   <form action="upload_controller">
+    </form>
+    <br>
+    <br>
+    <form action="upload_controller">
     	<div class="form-group">
         	<button type="submit" value="Upload" class="btn btn-primary btn-lg pull-left">Upload</button>
     	</div>
-	</form>
-	<br>
-	<br>
-   	<form action="home/logout">
-    	<div class="form-group">
-        	<button type="submit" value="Logout" class="btn btn-primary btn-lg pull-left">Logout</button>
-    	</div>
-	</form>
-	
-
+	 </form>
+	 <br>
+	 <br>
+   	  <form action="home/logout">
+    	   <div class="form-group">
+      	   <button type="submit" value="Logout" class="btn btn-primary btn-lg pull-left">Logout</button>
+    	   </div>
+	    </form>
  </body>
 </html>
