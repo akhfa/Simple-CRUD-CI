@@ -39,8 +39,8 @@
           <tr>
             <th>No.</th>
             <th>File Name</th>
-            <th>Delete</th>
-            <th>Download</th>
+            <th class="row text-center">Delete</th>
+            <th class="row text-center">Download</th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +49,8 @@
               <tr>
                 <td><?php echo $no; ?></td>
                 <td><a href="<?php echo $dir.'/'.$value?>"><?php echo $value;?></td>
+                <td class="row text-center"><span class="glyphicon glyphicon-remove"></span></td>
+                <td class="row text-center"> <a href="<?php echo $dir.'/'.$value?>"><span class="glyphicon glyphicon-download-alt"></span></td>
               </tr>
               <?php $no++; ?>
             <?php endforeach; ?>
