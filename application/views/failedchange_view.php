@@ -23,6 +23,7 @@
         <form action="<?php echo base_url()?>index.php/changepassword_controller">
             <button type="submit" value="Register" class="btn btn-primary btn-lg btn-block">Change Password</button>
         </form>
+        <br>
         <form action="home">
             <button type="submit" value="Home" class="btn btn-primary btn-lg btn-block">Cancel</button>
         </form>
